@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  width: 100%; 
+  max-width: 400px;
+  background-color: #0906cdb8;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 35px;
+  margin: auto; 
+}
+
+.form * {
+  z-index: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.field {
+  margin-top: 30px;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input {
+  display: block;
+  height: 40px; 
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.input::placeholder {
+  color: #e5e5e5;
+}
+
+.submitBtn {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #0906cdb8;
+}
+
+.submitBtn:hover {
+  background-color: #e5e5e5;
+  color: #0906cdb8;
+}
+
+.link, .buttonToHome {
+  padding-top: 25px;
+  text-align: center;
+  display: block;
+  color: white;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.errorMessage {
+  text-align: center; 
+  color: red; 
+  margin: 10px 0; 
+  font-weight: bold; 
+}
+
+.submitBtn,
+.buttonToHome { 
+  margin-top: 30px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #0906cdb8;
+}
+
+.submitBtn:hover,
+.buttonToHome:hover { 
+  background-color: #e5e5e5;
+  color: #0906cdb8;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  gap: 0.3px;
+}
+
+.toggleButton {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .toggleButton:hover {
+    border-color: #0906cdb8;
+  }
+  
+  .toggleButtonActive {
+    color: #fff;
+    background-color: #0906cdb8;
+    border-color: #0906cdb8;
+  }
+  
+  .toggleButtonActive:hover {
+    background-color: #050459;
+    border-color: #050459;
+  }
+
+  
+  

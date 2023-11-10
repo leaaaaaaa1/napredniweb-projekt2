@@ -1,0 +1,31 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+model User {
+  id             Int        @id @default(autoincrement())
+  username       String     @unique
+  password       String
+  failedAttempts Int        @default(0)
+  lockUntil      DateTime?
+  sessions       Session[]  // This creates the back-relation
+}
+
+model Session {
+  id         Int      @id @default(autoincrement())
+  userId     Int
+  sessionId  String   @unique
+  validUntil DateTime
+  user       User     @relation(fields: [userId], references: [id])
+
+  @@index([userId], name: "userId")
+}
+
+
+

@@ -1,0 +1,53 @@
+.background {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('/images/sports.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.homeContainer {
+    box-sizing: border-box;
+    max-width: 800px;
+    width: 90%; /* slightly less than 100% to account for padding */
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: rgb(18, 139, 99);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 0 auto; /* Center the container */
+}
+
+.homeHeading {
+    color: rgba(0, 8, 227, 0.876);
+    margin-bottom: 20px;
+}
+
+.homeLink {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 8, 227, 0.496);
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.homeLink:hover {
+    background-color: rgba(0, 8, 227, 0.764);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
